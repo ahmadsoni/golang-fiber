@@ -1,0 +1,46 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of `go build`
+/bin/
+/build/
+/dist/
+*.exe
+*.out
+
+# Go modules
+/go.sum
+
+# Dependency directories (vendor dir)
+/vendor/
+
+# IDE/editor config
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Env or config files
+.env
+.env.*
+
+# Docker
+*.pid
+tmp/
+
+# Air (live reload) temporary files
+/tmp/
+tmp/
+.air/
