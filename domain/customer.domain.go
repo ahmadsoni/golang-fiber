@@ -11,7 +11,7 @@ type Customer struct {
 	Code      string       `db:"code"`
 	Name      string       `db:"name"`
 	CreatedAt sql.NullTime `db:"created_at"`
-	UpdatedAt sql.NullTime `db:"update_at"`
+	UpdatedAt sql.NullTime `db:"updated_at"`
 	DeletedAt sql.NullTime `db:"deleted_at"`
 }
 

@@ -1,18 +1,18 @@
 package dto
 
 type CustomerData struct {
-	ID   string `Json:"id"`
-	Code string `Json:"code"`
-	Name string `Json:"name"`
+	ID   string `json:"id"`
+	Code string `json:"code"`
+	Name string `json:"name"`
 }
 
 type CreateCustomerRequest struct {
-	Code string `Json:"code" validate:"required"`
-	Name string `Json:"name" validate:"required"`
+	Code string `json:"code" validate:"required"`
+	Name string `json:"name" validate:"required"`
 }
 
 type UpdateCustomerRequest struct {
-	ID   string `Json:"-"`
-	Name string `Json:"name" validate:"required"`
-	Code string `Json:"code" validate:"required"`
+	ID   string `json:"-"`
+	Name string `json:"name" validate:"required"`
+	Code string `json:"code" validate:"required"`
 }

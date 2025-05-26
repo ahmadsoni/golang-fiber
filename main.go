@@ -28,10 +28,14 @@ func main() {
 	}
 
 	customerRepository := repository.NewCustomer(dbConnection)
+	userRepository := repository.NewUser(dbConnection)
+
 	customerService := services.NewCustomer(customerRepository)
+	authService := services.NewAuth(cnf, userRepository)
 
 	app := fiber.New()
 
 	api.NewCustomer(app, customerService)
+	api.NewAuth(app, authService)
 	_ = app.Listen(cnf.Server.Host + ":" + cnf.Server.Port)
 }
